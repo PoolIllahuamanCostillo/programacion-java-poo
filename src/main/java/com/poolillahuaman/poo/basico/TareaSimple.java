@@ -1,6 +1,9 @@
 package com.poolillahuaman.poo.basico;
 
 public class TareaSimple {
+	
+	// Atributos:
+	
 	int duracionEnHoras;
 	private String titulo;
 	boolean completado;
@@ -14,6 +17,8 @@ public class TareaSimple {
 		// TODO Auto-generated constructor stub
 	}
 	
+	// Métodos:
+	
 	public void cambiarEstado() {
 		this.completado=!completado;
 		/**if (this.completada) {
@@ -24,10 +29,10 @@ public class TareaSimple {
 	}
 
 	public void mostrarTarea() {
-		if(completado) {
-			System.out.println("La tarea " + titulo + " está completada");
+		if(this.completado) {
+			System.out.println("La tarea " + this.titulo + " está completada");
 		} else {
-			System.out.println("La tarea " + titulo + " no está completada");
+			System.out.println("La tarea " + this.titulo + " no está completada");
 		}
 	}
 
