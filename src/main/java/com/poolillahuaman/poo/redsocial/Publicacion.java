@@ -7,15 +7,6 @@ public class Publicacion {
 	private int like;
 	private LocalDate fecha;
 	
-
-	public Publicacion(String contenido, int likes, LocalDate fecha, int like) {
-		super();
-		this.contenido = contenido;
-		this.like = like;
-		this.fecha = fecha;
-	}
-
-
 	public void mostrarPublicacion () {
 		System.out.println(contenido);
 		System.out.println(like);
