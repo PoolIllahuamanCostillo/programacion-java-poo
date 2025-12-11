@@ -13,12 +13,38 @@ public class Publicacion {
 		System.out.println(fecha);
 	}
 	
-	public void sumaLike() {
-		System.out.println();
+	public void sumarLike() {
+		like +=1;
 	}
 	
 	public int totalLike() {
 		System.out.println("La publicación tiene " + like + " likes");
 		return like;
 	}
+
+	public String getContenido() {
+		return contenido;
+	}
+
+	public void setContenido(String contenido) {
+		this.contenido = contenido;
+	}
+
+	public int getLike() {
+		return like;
+	}
+
+	public void setLike(int like) {
+		this.like = like;
+	}
+
+	public LocalDate getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(LocalDate fecha) {
+		this.fecha = fecha;
+	}
+	
+	
 }
